@@ -1,0 +1,28 @@
+#language = "kaboom"
+# run = "node node_modules/vite/bin/vite build --watch & npm run preview"
+
+run = "npm run preview"
+
+entrypoint = "code/main.js"
+
+hidden = [
+	".config",
+	"learn",
+	"helper.ts",
+	"run.js",
+	"package.json",
+	"package-lock.json",
+]
+
+[packager]
+language="nodejs"
+
+[packager.features]
+packageSearch = true
+
+[languages.javascript]
+pattern = "**/*.{js,ts}"
+syntax = "javascript"
+
+[languages.javascript.languageServer]
+start = [ "typescript-language-server", "--stdio" ]

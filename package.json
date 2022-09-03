@@ -1,0 +1,15 @@
+{
+  "name": "skyscraper",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.9.9"
+  },
+  "dependencies": {
+    "kaboom": "^2001.0.0-alpha.21",
+    "path": "^0.12.7"
+  }
+}
